@@ -27,5 +27,5 @@ boss.assignTask(task, {
     globalArgs: { i: { v: 0, f: (i) => i++ } },
 }).then((res) => {
     console.log('All tasks resolved');
-    fs.writeFileSync('catfacts.json', JSON.stringify(res));
+    fs.writeFileSync('data.json', JSON.stringify(res));
 });
